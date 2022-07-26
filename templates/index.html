@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+        
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict</title>
+</head>
+<body>
+    <form action="/predict" method='POST'>
+
+       <label>SepalLengthCm</label><input type="value" name="SepalLengthCm">
+       <br>
+       <label>SepalWidthCm</label><input type="value" name="SepalWidthCm">
+       <br>
+       <label>PetalWidthCm</label><input type="value" name='PetalWidthCm'>
+       <br>
+       <label>PetalLengthCm</label><input type="value" name='PetalLengthCm'>
+       <br>
+
+       
+       <button type="submit">Predict</button>
+
+       <label>The specie specified is:</label><label>{{predict}}</label>
+
+
+
+
+    </form>
+    
+</body>
+</html>
